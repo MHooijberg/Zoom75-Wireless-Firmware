@@ -1,3 +1,6 @@
+# !HELP WANTED!
+I would like help with researching and creating custom firmware for the Zoom75 Wireless keyboard by Meletrix, as it's a time consuming task.
+
 # Meletrix Zoom75 Wireless (The WQ206A1UBTG1 V1.12 1723 KB81 PCB)
 A repository dedicated for collaborative research aimed at establishing opensource QMK-based firmware for the Zoom75 Wireless keyboard by Meletrix.
 
