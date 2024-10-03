@@ -1,8 +1,10 @@
 <!-- TODO: Add Badges Here -->
 [![Productpage](https://img.shields.io/badge/Official_product_page-_?style=flat&logoSize=auto&color=%23c3a372
 )](https://meletrix.com/products/zoom75-collection)
-[![Firmware branch](https://img.shields.io/badge/Firmware%20branch%20(experimental)-_?style=flat&logo=github&logoColor=%23fff&logoSize=auto&color=%230e0e0e
+[![Firmware branch](https://img.shields.io/badge/Firmware%20branch%20(experimental)-_?style=flat&logo=github&logoColor=%23fff&logoSize=auto&color=%23010409
 )](https://github.com/MHooijberg/qmk_firmware/tree/meletrix_zoom75_wireless)
+[![MCU Pull-request](https://img.shields.io/badge/MCU%20Pull--request-_?style=flat&logo=github&logoColor=%23fff&color=%23010409)
+](https://github.com/qmk/qmk_firmware/pull/23445)
 [![The Meletrix Discord](https://img.shields.io/badge/Join%20the%20discussion!-_?style=flat&logo=discord&logoColor=%23fff&logoSize=auto&color=%235865F2
 )](https://discord.gg/meletrix-919202175530463272)
 [![MIT License](https://img.shields.io/badge/License-MIT_License-yellow
