@@ -1,63 +1,24 @@
-# !HELP WANTED!
-I would like help with researching and creating custom firmware for the Zoom75 Wireless keyboard by Meletrix, as it's a time consuming task.
+<!-- TODO: Add Badges Here -->
+[![Productpage](https://img.shields.io/badge/Official_product_page-_?style=flat&logoSize=auto&color=%23c3a372
+)](https://meletrix.com/products/zoom75-collection)
+[![Firmware branch](https://img.shields.io/badge/Firmware%20branch%20(experimental)-_?style=flat&logo=github&logoColor=%23fff&logoSize=auto&color=%230e0e0e
+)](https://github.com/MHooijberg/qmk_firmware/tree/meletrix_zoom75_wireless)
+[![The Meletrix Discord](https://img.shields.io/badge/Join%20the%20discussion!-_?style=flat&logo=discord&logoColor=%23fff&logoSize=auto&color=%235865F2
+)](https://discord.gg/meletrix-919202175530463272)
+[![MIT License](https://img.shields.io/badge/License-MIT_License-yellow
+)](https://github.com/MHooijberg/Zoom75-Wireless-Firmware/blob/main/LICENSE)
+<!-- License -->
 
 # Meletrix Zoom75 Wireless (The WQ206A1UBTG1 V1.12 1723 KB81 PCB)
-A repository dedicated for collaborative research aimed at establishing opensource QMK-based firmware for the Zoom75 Wireless keyboard by Meletrix.
+This repository is meant for collaborative research on the Zoom75 Wireless keyboard by Meletrix. The goal is to establish opensource [QMK-based](https://qmk.fm/) firmware for the Zoom75 Wireless keyboard by Meletrix.
 
----
+Meletrix markets the Zoom75 wired version as QMK compatible, however in order to add the wireless connectivity it required using a different MCU. The MCU thats in the Zoom75 Wireless is (highly likely to be the ArteryTek AT32F415 RTC7-7).
 
-# Table of Contents
-[1. Introduction](#introduction)</br>
-[1. Hardware](#hardware)</br>
-[2. Software](#software)</br>
-[3. Useful Links](#links)</br>
+The current issue is that QMK does not have support for this particular type of MCU family. In order to add support ChibiOS needs to support this MCU so that QMK can make use of their Hardware Abstraction Layer (HAL) from the [ChibiOS-Contrib](https://github.com/ChibiOS/ChibiOS-Contrib) repository. After this a new PR with the MCU support needs to be submitted for review to both the [QMK Firmware](https://github.com/qmk/qmk_firmware) and and [QMK Toolbox](https://github.com/qmk/qmk_toolbox).
 
----
 
-# Introduction <a name="Introduction"></a>
-
-## Tasks:
-In order for the keyboard to be supported by QMK, the microcontroller (MCU) used in the keyboard must be one of the MCUs supported by QMK. If the MCU is not already supported, it needs to be added to ChibiOS, which involves submitting a pull request (PR) to extend ChibiOS support for that specific MCU. This is because the hardware abstraction layers of ChibiOS are used by QMK to talk to non-STM32 type MCU's. However this will also mean that existing features of the keyboard need to be manually added because these are not in QMK, for example the custom keycodes given by the company to manage connections to bluetooth, wired and wireless devices.
-
-Also since Meletrix recommend their own firmware to flash the keyboard, there needs to be research done to check if the keyboard can be flashed safely through QMK's software.
-
-# Hardware <a name="hardware"></a>
-This section describes information about the hardware.
-
-## Battery:
-**Modelnumber:** CL 3544105</br>
-**Links:**
-
-## Bluetooth board & WiFi:
-**Modelnumber:** Unknown</br>
-**Links:**
-
-## CPU:
-**Modelnumber:** AT32F415 RCT7-7</br>
-**Links:**
- - [Datasheet](https://www.arterychip.com/download/DS/DS_AT32F415_V2.02_EN.pdf)
-
-## Daughterboard:
-**Modelnumber:** Ai03 C3</br>
-**Links:**
-
-## Memory:
-**Modelnumber:** w25q64</br>
-**Links:**
- - [Potential Parts](https://www.digikey.com/en/products/base-product/winbond-electronics/256/W25Q64/339736)
-
-# Software <a name="software"></a>
-
-## Notes:
-The following are notes on the findings on the stock firmware.
-
-### Operating System (OS)
-The firmware seems to have an RTOS, this is indicated by a file path in the firmware "..\components\rtx\RTX_Conf_CM.c".
-This indicates that the system might use CMSIS or 
-CMSIS-RTOS by Keil a subsidiary of ARM Software.
-
-It's also noteworthy to mention that the RGB animations are the same and in the same order as QMK's, this might mean they use the same library or similar code.
-
----
-
-# Useful Links <a name="links"/>
+**Progress:**
+- [x] ChibiOS support
+- [x] QMK upstreamed ChibiOS
+- [ ] Submitted Pull-Request for adding MCU support to QMK for review.
+- [ ] Submitted Pull-request for adding keyboard support to QMK for review.
