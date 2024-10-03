@@ -1,4 +1,4 @@
-https://img.shields.io/badge/any_text-you_like-blue
+<img href="https://img.shields.io/badge/any_text-you_like-blue"></img>
 # Meletrix Zoom75 Wireless (The WQ206A1UBTG1 V1.12 1723 KB81 PCB)
 This repository is meant for collaborative research on the Zoom75 Wireless keyboard by Meletrix. The goal is to establish opensource QMK-based firmware for the Zoom75 Wireless keyboard by Meletrix.
 
