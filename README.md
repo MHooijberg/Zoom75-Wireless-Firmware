@@ -18,9 +18,12 @@ Meletrix markets the Zoom75 wired version as QMK compatible, however in order to
 
 The current issue is that QMK does not have support for this particular type of MCU family. In order to add support ChibiOS needs to support this MCU so that QMK can make use of their Hardware Abstraction Layer (HAL) from the [ChibiOS-Contrib](https://github.com/ChibiOS/ChibiOS-Contrib) repository. After this a new PR with the MCU support needs to be submitted for review to both the [QMK Firmware](https://github.com/qmk/qmk_firmware) and and [QMK Toolbox](https://github.com/qmk/qmk_toolbox).
 
+Note: It's important to note that if a QMK-compatible firmware is made for the keyboard, that it's only for the wired functionality. As QMK is very power consuming, that means that a better option to eventually add full wireless functionality that custom ZMK support should be made.
+Creating ZMK firmware is a possible project in the future, and this repository will be updated with more information when this happens.
 
 **Progress:**
 - [x] ChibiOS support
 - [x] QMK upstreamed ChibiOS
-- [ ] Submitted Pull-Request for adding MCU support to QMK for review.
+- [x] Submitted Pull-Request for adding MCU support to QMK for review.
+- [ ] Gather information on the pinout for the board so that QMK can be configured properly.
 - [ ] Submitted Pull-request for adding keyboard support to QMK for review.
