@@ -1,4 +1,4 @@
-<!-- TODO: Add Badges Here -->
+<!-- Badges -->
 [![Productpage](https://img.shields.io/badge/Official_product_page-_?style=flat&logoSize=auto&color=%23c3a372
 )](https://meletrix.com/products/zoom75-collection)
 [![Firmware branch](https://img.shields.io/badge/Firmware%20branch%20(experimental)-_?style=flat&logo=github&logoColor=%23fff&logoSize=auto&color=%23010409
@@ -7,8 +7,10 @@
 ](https://github.com/qmk/qmk_firmware/pull/23445)
 [![The Meletrix Discord](https://img.shields.io/badge/Join%20the%20discussion!-_?style=flat&logo=discord&logoColor=%23fff&logoSize=auto&color=%235865F2
 )](https://discord.gg/meletrix-919202175530463272)
-[![MIT License](https://img.shields.io/badge/License-MIT_License-yellow
-)](https://github.com/MHooijberg/Zoom75-Wireless-Firmware/blob/main/LICENSE)
+[![MIT License](https://img.shields.io/badge/License-MIT_License-yellow)](https://github.com/MHooijberg/Zoom75-Wireless-Firmware/blob/main/LICENSE)
+[![Static Badge](https://img.shields.io/badge/DigiKey_schematics_in_Scheme--it-_?style=flat&logo=digikeyelectronics&logoColor=%23fff&color=%23CC0000)](https://www.digikey.com/en/schemeit/project/detail/73e2cde2b4834adca2eaaf81ed0ce7a5)
+
+
 <!-- License -->
 
 # Meletrix Zoom75 Wireless (The WQ206A1UBTG1 V1.12 1723 KB81 PCB)
